@@ -38,10 +38,10 @@ pipeline {
     }
 
     post {
-        always {
-            echo 'Pipeline finalizado — limpiando workspace.'
-            cleanWs()
-        }
+        // always {
+        //     echo 'Pipeline finalizado — limpiando workspace.'
+        //     cleanWs()
+        // }
         success {
             echo 'Pruebas Karate ejecutadas con éxito.'
         }
