@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.512 s <<< FAILURE! - in examples.ExamplesTest
+examples.ExamplesTest.testParallel  Time elapsed: 4.489 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 861, url: https://gorest.co.in/public/v2/users/98756, response: 
+{"message":"Resource not found"}
+classpath:examples/Usuarios.User/Usuario.feature:41 ==> expected: <0> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
